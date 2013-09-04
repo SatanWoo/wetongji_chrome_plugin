@@ -1,7 +1,5 @@
 $(document).ready(function(){
-	$(".btn").click(function(){
-		fetchTodayData();
-	});
+	fetchTodayData();
 });
 
 function fetchTodayData()
@@ -40,7 +38,7 @@ function configureActivityLayout(activity) {
 
 	layout += "</span9></div>";
 
-	$(".container").append(layout);
+	$("#act").after(layout);
 }
 
 function configureInformationsLayout(informationArray) {
