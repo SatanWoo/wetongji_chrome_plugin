@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src = "js/jquery.js"></script>
+		<script type="text/javascript">
+			var wetongjiURL = "js/data.json";
+
+			var simisimiURl = "http://sandbox.api.simsimi.com/request.p?key=02b67a9a-8725-4f81-8a51-dc87dceef94e&lc=en&ft=1.0&text=hi"
+
+			function getJson() {
+				console.log("enter json");
+
+				$.getJSON(wetongjiURL, function(json) {
+					console.log(json);
+
+					return json;
+				});
+			}
+		</script>
+	</head>
+		<script type="text/javascript">
+			getJson();
+		</script>
+	<body>
+		
+	</body>
+</html>

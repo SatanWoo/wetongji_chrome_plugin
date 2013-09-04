@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+
+	"name": "WeTongji",
+	"version": "1.0.0", 
+	"description": "WeTongji for Chrome",
+	"background": {
+    	"scripts": ["js/background.js", "js/jquery.js"]
+  	},
+
+	"permissions":[
+		"http://*/*",
+    	"https://*/*",
+    	"tabs",
+    	"storage",
+    	"background"
+	],
+
+	"browser_action": {
+		"default_icon":"icon.png",
+		"default_title":"WeTongji for Chrome",
+		"default_popup":"popup.html"
+
+	}
+}
